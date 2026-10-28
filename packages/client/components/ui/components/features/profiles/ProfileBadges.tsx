@@ -35,7 +35,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Stoat Founder`,
+                  content: t`Vent Founder`,
                 },
               }}
               src={badgeFounder}
@@ -46,7 +46,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Stoat Developer`,
+                  content: t`Vent Developer`,
                 },
               }}
               src={badgeDeveloper}
@@ -57,7 +57,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Donated to Stoat`,
+                  content: t`Donated to Vent`,
                 },
               }}
               src={badgeSupporter}
@@ -68,7 +68,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Helped translate Stoat`,
+                  content: t`Helped translate Vent`,
                 },
               }}
               src={badgeTranslator}
