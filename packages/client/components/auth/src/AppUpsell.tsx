@@ -233,7 +233,7 @@ export function AppUpsell() {
             </h2>
             <p>
               <Trans>
-                Get Stoat for Android and keep up with your friends wherever you
+                Get Vent for Android and keep up with your friends wherever you
                 are.
               </Trans>
             </p>
@@ -275,7 +275,7 @@ export function AppUpsell() {
           <Copy>
             <h2>
               <Trans>
-                Stoat, right on <span>your desktop.</span>
+                Vent, right on <span>your desktop.</span>
               </Trans>
             </h2>
             <p>

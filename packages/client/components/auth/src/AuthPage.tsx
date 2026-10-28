@@ -26,7 +26,6 @@ import { A, useLocation } from "@revolt/routing";
 import { useState } from "@revolt/state";
 import { IconButton, Symbol } from "@revolt/ui";
 
-import Wordmark from "../../../public/assets/web/wordmark.svg?component-solid";
 import { AppUpsell } from "./AppUpsell";
 import { BubbleMood, BubbleProvider, FlowBase, FlowBubble } from "./flows/Flow";
 
@@ -126,6 +125,32 @@ const Brand = styled("div", {
           },
         },
       },
+    },
+  },
+});
+
+const VentWordmark = styled("span", {
+  base: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "10px",
+    color: "currentColor",
+    fontSize: "2rem",
+    fontWeight: 800,
+    letterSpacing: "-0.06em",
+    lineHeight: 1,
+    "&::before": {
+      content: '"V"',
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      width: "1.15em",
+      height: "1.15em",
+      borderRadius: "35%",
+      color: "#33294b",
+      background: "#fff",
+      fontSize: "0.72em",
+      letterSpacing: "-0.08em",
     },
   },
 });
@@ -506,7 +531,7 @@ export function AuthPage(props: { children: JSX.Element }) {
       <Page>
         <Hero>
           <Brand aria-hidden="true">
-            <Wordmark />
+            <VentWordmark>Vent</VentWordmark>
           </Brand>
           <AppUpsell />
         </Hero>
@@ -532,7 +557,7 @@ export function AuthPage(props: { children: JSX.Element }) {
                   <Symbol size={24}>arrow_back</Symbol>
                 </IconButton>
               </Show>
-              <Wordmark />
+              <VentWordmark>Vent</VentWordmark>
             </Brand>
 
             <AccountSwitch>
@@ -541,7 +566,7 @@ export function AuthPage(props: { children: JSX.Element }) {
                 fallback={
                   <>
                     <span>
-                      <Trans>New to Stoat?</Trans>
+                      <Trans>New to Vent?</Trans>
                     </span>
                     <A href="/login/create">
                       <Trans>Create account</Trans>
